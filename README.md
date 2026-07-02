@@ -1,3 +1,5 @@
+![Portfolio Preview](./preview.png)
+
 # 🚀 Mudasir Sohail — Personal Portfolio
 
 A modern, interactive personal portfolio showcasing my work as a **Full-Stack Developer** and my journey into **AI-powered products and Agentic AI systems**.
