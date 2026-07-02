@@ -32,6 +32,9 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Mudasir Sohail — Full-Stack Developer" },
       { property: "og:description", content: "Building AI-powered products and agentic systems. React, Next.js, Python, Docker, Kubernetes." },
     ],
+    links: [
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+    ],
   }),
   component: Index,
 });
