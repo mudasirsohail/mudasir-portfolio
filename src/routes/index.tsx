@@ -503,7 +503,7 @@ function About() {
           <p className="text-base md:text-lg text-muted-foreground">
             Started with curiosity, kept going because every project taught me one new uncomfortable
             thing. Today I'm building agentic systems, writing about the physics of AI products, and
-            shipping freelance work on Upwork. The long arc: a small studio that makes opinionated
+            shipping freelance work. The long arc: a small studio that makes opinionated
             AI tools for people who hate bloat.
           </p>
         </motion.div>
@@ -692,7 +692,7 @@ const glimpses = [
   {
     stat: "1st",
     title: "Hackathons",
-    detail: "1st place — JDC X Indrive National Hackathon",
+    detail: "1st place — JDC X Indrive Course",
   },
   {
     stat: "10+",
