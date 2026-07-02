@@ -178,105 +178,6 @@ function Hero() {
   );
 }
 
-// /* ---------------- Projects (Bento) ---------------- */
-
-// type Project = {
-//   title: string;
-//   blurb: string;
-//   tag: string;
-//   tone?: "ink" | "accent" | "paper";
-//   className?: string;
-// };
-
-
-// const projects: Project[] = [
-//   {
-//     title: "Shoe E-Commerce Platform",
-//     blurb: "Developed a full-stack shoe marketplace featuring user authentication, dynamic product management, shopping cart, secure checkout, and a responsive user interface optimized for performance and scalability.",
-//     tag: "Next.js · TypeScript · Sanity CMS · Stripe",
-//     tone: "ink",
-//     className: "md:col-span-7 md:row-span-2",
-//   },
-//   {
-//     title: "Vision Healthcare Foundation Website",
-//     blurb: "Built a healthcare appointment booking platform with online scheduling, patient management, and responsive design.",
-//     tag: "Next.js · TypeScript · Sanity CMS",
-//     tone: "accent",
-//     className: "md:col-span-5",
-//   },
-//   {
-//     title: "Todo AI",
-//     blurb: "An LLM-powered task companion that breaks goals into atomic steps and schedules them.",
-//     tag: "React · OpenAI · Supabase",
-//     tone: "paper",
-//     className: "md:col-span-5",
-//   },
-//   {
-//     title: "Physical AI Book with chatbot",
-//     blurb: "A printed companion to learning agentic AI — illustrations, code samples and field notes from real builds.",
-//     tag: "Writing · Illustration · AI",
-//     tone: "ink",
-//     className: "md:col-span-7",
-//   },
-//   {
-//     title: "Cloud-Native Hackathon Lab",
-//     blurb: "Production-grade microservices stack built during a Kubernetes hackathon — containerized services, K8s manifests and observability.",
-//     tag: "Docker · Kubernetes · Microservices",
-//     tone: "paper",
-//     className: "md:col-span-4",
-//   },
-// ];
-
-
-
-// function Projects() {
-//   return (
-//     <section id="work" className="border-t border-border/60 bg-background">
-//       <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-//         <SectionHeader eyebrow="Selected work" title="Things I've built" />
-//         <motion.div
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true, margin: "-80px" }}
-//           variants={stagger}
-//           className="grid grid-cols-1 md:grid-cols-12 auto-rows-[minmax(180px,auto)] gap-4 mt-12"
-//         >
-//           {projects.map((p) => (
-//             <ProjectCard key={p.title} {...p} />
-//           ))}
-//         </motion.div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-// function ProjectCard({ title, blurb, tag, tone = "paper", className }: Project) {
-//   const tones = {
-//     ink: "bg-foreground text-background border-foreground hover:bg-ink",
-//     accent: "bg-accent text-accent-foreground border-accent",
-//     paper: "bg-card text-foreground border-border hover:border-foreground/40",
-//   };
-//   return (
-//     <motion.a
-//       href="#"
-//       variants={fadeUp}
-//       whileHover={{ y: -3 }}
-//       transition={{ type: "spring", stiffness: 280, damping: 24 }}
-//       className={`group relative flex flex-col justify-between rounded-2xl border p-6 md:p-8 transition-colors ${tones[tone]} ${className ?? ""}`}
-//     >
-//       <div className="flex items-start justify-between gap-4">
-//         <span className="text-xs uppercase tracking-widest opacity-70">{tag}</span>
-//         <ArrowUpRight className="size-5 opacity-60 group-hover:opacity-100 group-hover:rotate-12 transition-all" />
-//       </div>
-//       <div className="mt-10">
-//         <h3 className="font-display font-semibold text-2xl md:text-3xl tracking-tight">{title}</h3>
-//         <p className="mt-3 text-sm md:text-base opacity-80 max-w-md leading-relaxed">{blurb}</p>
-//       </div>
-//     </motion.a>
-//   );
-// }
 
 
 
@@ -799,14 +700,15 @@ function Achievements() {
                 {achievements.map((item, index) => {
                   const segment = 1 / achievements.length;
 
-const enterStart = index * segment;
+
+const enterStart = index * segment - (index > 0 ? segment * 0.15 : 0);
 const enterEnd = enterStart + segment * 0.2;
 
 const holdStart = enterEnd;
-const holdEnd = holdStart + segment * 0.20;;
+const holdEnd = holdStart + segment * 0.25;
 
 const exitStart = holdEnd;
-const exitEnd = enterStart + segment;
+const exitEnd = index * segment + segment;
 
 const rawOpacity = useTransform(
   scrollYProgress,
@@ -818,7 +720,7 @@ const rawOpacity = useTransform(
     exitStart,
     exitEnd,
   ],
-  index === 0 ? [1, 1, 1, 1, 1, 1] : [0, 2, 2, 2, 2, 0]
+  index === 0 ? [1, 1, 1, 1, 0, 0] : [0, 1, 1, 1, 0, 0]
 );
 
 const rawY = useTransform(
@@ -831,7 +733,7 @@ const rawY = useTransform(
     exitStart,
     exitEnd,
   ],
-  index === 0 ? [0, 0, 0, 0, -20, -40] : [40, 0, 0, 0, -40, -70]
+  index === 0 ? [0, 0, 0, 0, -15, -30] : [20, 0, 0, 0, -20, -40]
 );
 
 const rawScale = useTransform(
@@ -862,39 +764,6 @@ const scale = useSpring(rawScale, {
   damping: 30,
 });
                   return (
-//   <motion.article
-//     key={item.title}
-//     style={{ opacity, y, scale }}
-//     className="absolute inset-x-0 top-0 flex h-[72vh] min-h-[28rem] flex-col rounded-[2rem] border border-border/70 bg-card/95 shadow-[0_24px_80px_rgba(0,0,0,0.06)] backdrop-blur overflow-hidden"
-//   >
-//     {/* Image — top portion of card */}
-//     <div className="w-full h-48 md:h-56 flex-shrink-0 overflow-hidden">
-//       <img
-//         src={item.image}
-//         alt={item.title}
-//         className="w-full h-full object-cover"
-//       />
-//     </div>
-
-//     {/* Text — bottom portion of card */}
-//     <div className="flex flex-1 items-end p-7">
-//       <div className="w-full">
-//         <div className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-3 py-1.5 text-[0.68rem] uppercase tracking-[0.28em] text-muted-foreground">
-//           <Trophy className="size-3.5 text-accent" />
-//           Recognition
-//         </div>
-//         <h3 className="mt-6 font-display text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-foreground">
-//           {item.title}
-//         </h3>
-//         <p className="mt-4 max-w-lg text-sm md:text-base leading-relaxed text-muted-foreground">
-//           {item.detail}
-//         </p>
-//       </div>
-//     </div>
-//   </motion.article>
-// );
-
-
   <motion.article
     key={item.title}
     style={{ opacity, y, scale }}
@@ -937,6 +806,7 @@ const scale = useSpring(rawScale, {
     </section>
   );
 }
+
 
 /* ---------------- Contact ---------------- */
 
