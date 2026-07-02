@@ -121,6 +121,16 @@ Build for production:
 ```bash
 npm run build
 ```
+---
 
+## 📬 Contact
+
+📧 **Email:** mudasirsohailsoomro@gmail.com
+
+💼 **LinkedIn:** https://www.linkedin.com/in/mudasirsohail/
+
+🌐 **Portfolio:** https://mudasirsohail.vercel.app
+
+---
 
 ⭐ If you like this project, consider giving it a star.
