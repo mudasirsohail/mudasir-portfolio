@@ -1,136 +1,72 @@
-# 🚀 Mudasir Sohail — Personal Portfolio
+# Mudasir Sohail — Personal Portfolio
 
-A modern, interactive personal portfolio showcasing my work as a **Full-Stack Developer** and my journey into **AI-powered products and Agentic AI systems**.
+> Full-Stack Developer & Agentic AI Engineer based in Karachi, Pakistan.
 
-Built with a focus on performance, design, smooth interactions, and developer experience.
-
-🌐 **Live Website:** https://mudasirsohail.vercel.app
+🌐 **Live:** [mudasirsohail.vercel.app](https://mudasirsohail.vercel.app)
 
 ---
 
-## ✨ Features
+## About
 
-- Modern and responsive UI
-- Interactive Bento-style projects section
-- Scroll-driven animations
-- Animated achievements showcase
-- Fully responsive across all devices
-- Smooth transitions powered by Motion
-- Professional developer portfolio design
-- Optimized performance and accessibility
+Personal portfolio showcasing my projects, achievements, skills, and story. Built with a focus on clean design, smooth animations, and real content — no filler, no fake projects.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-### Frontend
-- TypeScript
-- React
-- TanStack Router
-- Vite
-- Tailwind CSS v4
-
-### Animation
-- Motion (Framer Motion)
-
-### Backend & AI
-- Python
-- FastAPI
-- OpenAI Agents SDK
-- RAG Systems
-
-### Database & Infrastructure
-- PostgreSQL
-- MongoDB
-- Docker
-- Kubernetes
-
-### Deployment
-- Vercel
-- GitHub Actions
+| Layer | Technology |
+|---|---|
+| Framework | Vite + TanStack Start |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 |
+| Animations | Framer Motion |
+| Routing | TanStack Router |
+| Deployment | Vercel |
 
 ---
 
-## 📂 Featured Projects
+## Sections
 
-### 👟 Shoe E-Commerce Platform
-Full-stack e-commerce marketplace featuring authentication, dynamic product management, shopping cart, secure checkout, and responsive design.
-
-**Stack:** Next.js • TypeScript • Sanity CMS • Stripe
-
----
-
-### 🏥 Vision Healthcare Foundation
-Healthcare appointment booking platform featuring online scheduling, patient management, and dynamic content management.
-
-**Stack:** Next.js • TypeScript • Sanity CMS
+- **Hero** — Introduction, photo, CTA buttons, social links
+- **Projects** — Bento grid with 7 real projects
+- **About** — Who I am and what I'm building toward
+- **Skills** — Tech stack and tools
+- **Glimpse** — Stats: repos, clients, scholarships, certifications
+- **Achievements** — Scroll-animated cards with images (RUDN, HSE, Rector, JDC)
+- **Contact** — Get in touch
 
 ---
 
-### 🤖 Todo AI
-AI-powered task management assistant leveraging LLM workflows and intelligent productivity features.
+## Projects Featured
 
-**Stack:** React • OpenAI • Supabase
-
----
-
-### 📘 Physical AI & Humanoid Robotics Book
-Educational companion project exploring Agentic AI, Physical AI, and intelligent systems.
-
-**Stack:** AI • Technical Writing • Research
+- Gold Alert Trading Bot — Python · Flask · Twelve Data API
+- Crypto Market Dashboard — Next.js · TypeScript · Web3
+- Full Stack Todo AI — React · OpenAI · Supabase
+- Physical AI & Humanoid Robotics Book — Docusaurus · Technical Writing
+- Vision Healthcare Booking System — Next.js · TypeScript · Sanity
+- Shoe E-Commerce Platform — Next.js · TypeScript · Stripe
+- Personal AI Employee — Qwen CLI · Python · Obsidian
 
 ---
 
-### ☁️ Cloud-Native Hackathon Lab
-Production-grade microservices and container orchestration project built during a cloud-native hackathon.
-
-**Stack:** Docker • Kubernetes • Microservices
-
----
-## 📊 Highlights
-
-- 🚀 10+ completed projects
-- 💻 60+ GitHub repositories
-- 🌍 Multiple international scholarship awards
-- 🤖 Currently exploring Agentic AI systems and AI-native applications
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
+## Getting Started
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-```
-
-Install dependencies:
-
-```bash
+# Install dependencies
 npm install
-```
 
-Run the development server:
-
-```bash
+# Run dev server
 npm run dev
-```
 
-Build for production:
-
-```bash
+# Build for production
 npm run build
 ```
----
-
-## 📬 Contact
-
-📧 **Email:** mudasirsohailsoomro@gmail.com
-
-💼 **LinkedIn:** https://www.linkedin.com/in/mudasirsohail/
-
-🌐 **Portfolio:** https://mudasirsohail.vercel.app
 
 ---
 
-⭐ If you like this project, consider giving it a star.
+## Connect
+
+- 🌐 [mudasirsohail.vercel.app](https://mudasirsohail.vercel.app)
+- 💼 [LinkedIn](https://linkedin.com/in/mudasirsohail)
+- 🐙 [GitHub](https://github.com/mudasirsohail)
+- 📧 mudasirsohailsoomro@gmail.com
