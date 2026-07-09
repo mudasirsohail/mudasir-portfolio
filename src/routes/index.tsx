@@ -11,6 +11,7 @@ import vision from "../assests/vision.jpg";
 import Todo from "../assests/todo.png";
 import AI from "../assests/ai.jpg";
 import cloud from "../assests/cloud.jpg";
+import nusaputra from "../assests/nusaputra.jpg";
 
 
 import {
@@ -663,6 +664,11 @@ const achievements = [
     title: "Rector Scholarship — UIN Surakarta",
     detail: "Awarded the Rector Scholarship at UIN Surakarta, Indonesia, for the Data Science program.",
     image: rector,
+  },
+  {
+  title: "Berlian Scholarship Offer — Nusa Putra University",
+  detail: "Selected from the waiting list and offered the Berlian Scholarship at Nusa Putra University, Indonesia. Offer respectfully declined — already committed to a fully funded scholarship.",
+  image: nusaputra,
   },
   {
     title: "1st Place — JDC X Indrive Course",
